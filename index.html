@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hu">
+	<head>
+		<meta charset="utf-8">
+		<title>Weblap cimke</title>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><!--[if IE compatible]-->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"><!--Responsive elem Mobil nézet-->
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body class="background">
+		<nav>
+			<header class="header">
+					<a class="headerlink" href="">Fejléclink 1</a>
+					<a class="headerlink" href="">Fejléclink 2</a>
+					<a class="headerlink hideonmobile" href="">Fejléclink 3</a>
+					<a class="headerlink hideonmobile" href="">Fejléclink 4</a>
+			<!--<a class="headerlink" href="">Fejléclink 5</a>-->
+      <!--<a class="headerlink" href="">Fejléclink 6</a>-->
+			</header>
+		</nav>
+		<article class="centersection">
+			<section class="bigfont">Üdvözöllek az oldalamon.</section>
+			<section class="buttonbox">
+				<a class="menubotton" href="">Menügomb első</a>
+				<a class="menubotton" href="">Menügomb második</a>
+				<a class="menubotton" href="">Menügomb hármas</a>
+		<!--<a class="menubotton" href="">Menügomb negyedik</a>-->
+		<!--<a class="menubotton" href="">Menügomb ötödik</a>-->
+			</section>
+		</article>
+		<footer class="footer">
+			&copy;fbandy-<span id="year"></span>
+					<script>
+						var d = new Date();
+						var n = d.getFullYear();
+						document.getElementById("year").innerHTML = n;
+					</script>
+		</footer>
+	</body>
+</html>

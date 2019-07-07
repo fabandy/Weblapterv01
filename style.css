@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Talpatlan, vékony betűtipus */
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:200&subset=latin-ext');
+
+html, body {
+  height: 100%;
+	margin: 0;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	color:white;
+	font-family: 'Work-Sans', Arial;
+
+}
+
+.pirosvonal {
+  border:1px solid red;
+}
+
+.background {
+  background-image: url("img/hatter.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+  color: rgb(0,0,0);
+}
+
+/*nav {
+  width: 100%;
+  height: 40px;
+  background-color: rgba(204,204,204,0.2);
+  border-bottom: 1px solid #940000;
+}*/
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+
+.headerlink {
+  background-color: rgba(204,204,204,0.1);
+  margin: 0 10px;
+  padding: 10px;
+  width: 140px;
+  height: 20px;
+  border: 1px solid #940000;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 2px 2px 2px 2px #940000;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.headerlink:hover {
+  background-color: rgba(255,255,253,0.3);
+}
+
+.centersection {
+  flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.bigfont {
+  font-family: 'Work-Sans', Arial;
+	font-size: 60px;
+	text-align: center;
+  text-shadow: 3px 5px 5px #940000;
+  margin: 0 0 10px 0;
+}
+
+.buttonbox {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.menubotton {
+  background-color: rgba(204,204,204,0.1);
+  margin: 10px;
+  padding: 10px;
+	width: 180px;
+	display: inline-block;
+	text-align: center;
+	font-size: 18px;
+	border: 1px solid #940000;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 2px 2px 2px 2px #940000;
+}
+
+.menubotton:hover {
+  background-color: rgba(255,255,253,0.3);
+}
+
+.footer {
+  display: flex;
+	justify-content: center;
+}
+
+/* Media Query stíluslap (mobilnézet) */
+@media (max-width: 767px) {
+	.backgroundvideo {
+		display: none;
+	}
+	.bigfont {
+		font-size: 30px;
+	}
+	.buttonbox {
+		font-size: 12px;
+	}
+	.headerlink {
+    height: 14px;
+		font-size: 12px;
+	}
+	.footer {
+		font-size: 10px;
+	}
+	.hideonmobile {
+    display: none;
+ 	}
+}
+
+@media (max-height:450px) {
+  .bigfont {
+  	font-size: 25px;
+  }
+  .menubotton {
+  	font-size: 12px;
+  }
+  .footer {
+  	display: none;
+  }
+  .header {
+  	display: none;
+  }
+}
